@@ -1,0 +1,58 @@
+{
+  "train_rmse_insample": 0.1124162720365967,
+  "train_pearson_insample": 0.9959388899853481,
+  "cv_rmse": 0.4918997201943704,
+  "cv_pearson": 0.9179981058118725,
+  "cv_rmse_nonzero_labels": 0.4963019985697323,
+  "baseline_rmse_predict_mean": 1.2381936808002134,
+  "drop_zero": false,
+  "wavlm_layers": [
+    20,
+    21,
+    22
+  ],
+  "models": [
+    {
+      "model": "tab_lgbm",
+      "cv_rmse": 0.6198014850845228,
+      "cv_pearson": 0.8657937638010215,
+      "stack_weight": 0.18436526075082205
+    },
+    {
+      "model": "tab_ridge",
+      "cv_rmse": 0.7034591598595492,
+      "cv_pearson": 0.8229616984467782,
+      "stack_weight": 0.027056411770138566
+    },
+    {
+      "model": "wavlm_ridge",
+      "cv_rmse": 0.5504551758951126,
+      "cv_pearson": 0.8957641437750327,
+      "stack_weight": 0.12729148894034054
+    },
+    {
+      "model": "wavlm_svr",
+      "cv_rmse": 0.522732638465618,
+      "cv_pearson": 0.9072041228970901,
+      "stack_weight": 0.6179790721974875
+    },
+    {
+      "model": "cola_svr",
+      "cv_rmse": 0.831201629929767,
+      "cv_pearson": 0.7415170288116103,
+      "stack_weight": 0.09976348681342391
+    },
+    {
+      "model": "deberta",
+      "cv_rmse": 0.785313744189262,
+      "cv_pearson": 0.7756783719384012,
+      "stack_weight": 0.07159078315095173
+    },
+    {
+      "model": "ENSEMBLE",
+      "cv_rmse": 0.4918997201943704,
+      "cv_pearson": 0.9179981058118725,
+      "stack_weight": -0.4355439696122545
+    }
+  ]
+}
